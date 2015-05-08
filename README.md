@@ -33,3 +33,9 @@ Edit crontab
 $ crontab -e
 ```
 and paste line written in synbot/cron/crontab.txt
+
+## Error log in CentOS
+
+```
+$ tail -f /var/mail/your_username
+```

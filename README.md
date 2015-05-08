@@ -1,21 +1,35 @@
 # synbot
 
+![synbot](https://pbs.twimg.com/profile_images/1571029747/synbot.jpg)
+
 ## How to build
 
-install libraries
+Firstly clone this repository
+```
+$ git clone https://github.com/synboo/synbot.git
+```
 
-install composer (if you've not installed yet)
-https://getcomposer.org/
-
-// install composer globally
+Install [composer](https://getcomposer.org/) (if you have not installed yet)
+```
 $ curl -sS https://getcomposer.org/installer | php
-$ mv composer.phar /usr/local/bin/composer
+$ [sudo] mv composer.phar /usr/local/bin/composer
+```
 
-// install twitteroauth
+Install [twitteroauth](https://twitteroauth.com/)
+```
+$ cd synbot/php/
 $ composer install
+```
 
-// Make SecretDefines.php
+Make SecretDefines.php
+```
+$ cd synbot/php/scripts
 $ cp SecretDefinesTemplate.php SecretDefines.php
-// Edit SecretDefines.php and input Twitter keys
+```
+and edit SecretDefines.php and input your twitter keys
 
-edit crontab
+Edit crontab
+```
+$ crontab -e
+```
+and paste line written in synbot/cron/crontab.txt

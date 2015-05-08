@@ -34,8 +34,9 @@ $ crontab -e
 ```
 and paste line written in synbot/cron/crontab.txt
 
-## Error log (CentOS)
+## Error log
 
+If your server's OS is CentOS, cron log is written in /var/mail/your_username
 ```
 $ tail -f /var/mail/your_username
 ```

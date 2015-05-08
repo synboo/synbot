@@ -5,4 +5,5 @@
 # 月 1-12
 # 曜日 0-7 (0または7は日曜日)
 
-#0 * * * * cd /path/to/directory/; php TimeSignal.php
+# Set path to directory which TimeSignal.php is set
+0 * * * * cd /path_to_your_directory/synbot/php/scripts; php TimeSignal.php
